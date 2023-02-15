@@ -2,13 +2,12 @@
 # We Use an official Python runtime as a parent image
 FROM python:3.6
 
-
 # The enviroment variable ensures that the python output is set straight
 # to the terminal with out buffering it first
 ENV PYTHONUNBUFFERED 1
 
-ENV APP_ENV=PROD
-ARG APP_ARG=PRARG
+ENV APP_ENV=PROD1
+ARG APP_ARG=PRARG2
 
 RUN echo "The ENV variable value is $APP_ENV, and $APP_ARG"
 
