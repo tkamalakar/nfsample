@@ -18,11 +18,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 print(os.environ.get('APP_ENV'))
-print(os.environ.get('APP_ENV', 'Kamal'))
-print(os.getenv('APP_ENV', 'DefaultKamal'))
+print(os.environ.get('APP_ENV', 'KamalFromSettings'))
+print(os.getenv('APP_ENV', 'DefaultKamalFromSettings'))
 print(os.environ.get('APP_ARG'))
-print(os.environ.get('APP_ARG', 'KamalARG'))
-print(os.getenv('APP_ARG', 'DefaultKamalARG'))
+print(os.environ.get('APP_ARG', 'KamalARGFromSettings'))
+print(os.getenv('APP_ARG', 'DefaultKamalARGFromSettings'))
+print(os.getenv('APP_RUN', 'DefaultKamalARGFromSettings'))
 
 
 # Quick-start development settings - unsuitable for production
