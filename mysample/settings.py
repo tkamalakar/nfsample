@@ -20,6 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 print(os.environ.get('APP_ENV'))
 print(os.environ.get('APP_ENV', 'Kamal'))
 print(os.getenv('APP_ENV', 'DefaultKamal'))
+print(os.environ.get('APP_ARG'))
+print(os.environ.get('APP_ARG', 'KamalARG'))
+print(os.getenv('APP_ARG', 'DefaultKamalARG'))
 
 
 # Quick-start development settings - unsuitable for production
