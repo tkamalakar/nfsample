@@ -1,0 +1,8 @@
+Django==3.2.8
+djangorestframework==3.14.0
+drf-writable-nested==0.6.3
+Pillow==8.4.0
+django-filter==21.1
+django-import-export==2.7.1
+drf-api-logger==1.1.11
+requests==2.27.1
