@@ -8,6 +8,8 @@ ENV PYTHONUNBUFFERED 1
 
 ENV APP_ENV=PROD
 
+RUN echo "The ENV variable value is $APP_ENV"
+
 # create root directory for our project in the container
 RUN mkdir /mysample
 
