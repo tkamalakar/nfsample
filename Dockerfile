@@ -7,8 +7,9 @@ FROM python:3.6
 ENV PYTHONUNBUFFERED 1
 
 ENV APP_ENV=PROD
+ARG APP_ARG=PRARG
 
-RUN echo "The ENV variable value is $APP_ENV"
+RUN echo "The ENV variable value is $APP_ENV, and $APP_ARG"
 
 # create root directory for our project in the container
 RUN mkdir /mysample
