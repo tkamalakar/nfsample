@@ -6,10 +6,10 @@ FROM python:3.6
 # to the terminal with out buffering it first
 ENV PYTHONUNBUFFERED 1
 
-ARG APP_ARG
-ENV APP_ENV $APP_ARG
+# ARG APP_ARG
+# ENV APP_ENV $APP_ARG
 
-RUN echo "The ENV variable value is $APP_ENV"
+# RUN echo "The ENV variable value is $APP_ENV"
 
 # create root directory for our project in the container
 RUN mkdir /mysample
