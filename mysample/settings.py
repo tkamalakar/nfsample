@@ -26,15 +26,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-print(os.environ.get('APP_ENV'))
-print(os.environ.get('APP_ENV', 'KamalFromSettings'))
-print(os.getenv('APP_ENV', 'DefaultKamalFromSettings'))
-print(os.environ.get('APP_ARG'))
-print(os.environ.get('APP_ARG', 'KamalARGFromSettings'))
-print(os.getenv('APP_ARG', 'DefaultKamalARGFromSettings'))
-print(os.getenv('APP_RUN', 'DefaultKamalARGFromSettings'))
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -91,7 +82,7 @@ WSGI_APPLICATION = 'mysample.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-print(os.environ.get('APP_ENV'))
+print('Application environment: ' + os.environ.get('APP_ENV'))
 if os.environ.get('APP_ENV') == 'prod':
         DATABASES = {
         "default": {
