@@ -82,7 +82,8 @@ WSGI_APPLICATION = 'mysample.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-print('Application environment: ' + os.environ.get('APP_ENV'))
+# print('Application environment: ' + os.environ.get('APP_ENV'))
+print(os.environ.get('APP_ENV'))
 if os.environ.get('APP_ENV') == 'prod':
         DATABASES = {
         "default": {
