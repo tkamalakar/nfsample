@@ -6,8 +6,7 @@ FROM python:3.6
 # to the terminal with out buffering it first
 ENV PYTHONUNBUFFERED 1
 
-ENV APP_ENV=PROD1
-ARG APP_ARG=PRARG2
+ARG APP_ENV=DEV
 
 RUN echo "The ENV variable value is $APP_ENV, and $APP_ARG"
 
