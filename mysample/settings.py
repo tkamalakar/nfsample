@@ -97,6 +97,7 @@ if os.environ.get('APP_ENV') == 'prod':
         }
     }
 else:
+      print(f"Not a Production Environment variable is {os.environ.get('APP_ENV')}")
       DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
