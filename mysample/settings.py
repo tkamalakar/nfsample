@@ -85,6 +85,7 @@ WSGI_APPLICATION = 'mysample.wsgi.application'
 # print('Application environment: ' + os.environ.get('APP_ENV'))
 print(os.environ.get('APP_ENV'))
 if os.environ.get('APP_ENV') == 'prod':
+        print(f"Environment variable is {os.environ.get('APP_ENV')}")
         DATABASES = {
         "default": {
             'ENGINE': 'django.db.backends.mysql',
