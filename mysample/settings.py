@@ -1,4 +1,13 @@
+from pathlib import Path
 import os
+import environ
+
+
+env_dir = environ.Path(__file__) - 2
+env = environ.Env()
+env.read_env(env_file = env_dir('.env'))
+
+ENVIRON = env
 
 """
 Django settings for mysample project.
