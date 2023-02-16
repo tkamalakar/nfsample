@@ -88,10 +88,10 @@ if env('APP_ENV') == 'prod':
         DATABASES = {
         "default": {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': "",
-            'USER': "",
-            'PASSWORD': "",
-            'HOST':"",
+            'NAME': "natfirst_prod_db",
+            'USER': "admin",
+            'PASSWORD': "administrator",
+            'HOST':"feb16db.cnbi9trzzlez.us-east-1.rds.amazonaws.com",
             'PORT':"3306",
         }
     }
