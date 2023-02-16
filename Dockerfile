@@ -7,7 +7,7 @@ FROM python:3.6
 ENV PYTHONUNBUFFERED 1
 
 ARG APP_ARG
-ENV APP_ENV = $APP_ARG
+ENV APP_ENV $APP_ARG
 
 RUN echo "The ENV variable value is $APP_ENV"
 
