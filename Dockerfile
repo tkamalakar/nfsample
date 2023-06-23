@@ -22,6 +22,8 @@ ADD . /mysample/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install gunicorn
 
 # ENTRYPOINT python manage.py runserver 0.0.0.0:8000
-ENTRYPOINT python manage.py runserver_plus --cert-file 54.162.36.204.pem --key-file 35.171.9.166.key 0.0.0.0:8000
+# ENTRYPOINT python manage.py runserver_plus --cert-file 54.162.36.204.pem --key-file 35.171.9.166.key 0.0.0.0:8000
+ENTRYPOINT gunicorn -b 0.0.0.0:8000 nfsample.wsgi
